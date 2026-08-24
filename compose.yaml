@@ -1,0 +1,35 @@
+services:
+  db:
+    image: timescale/timescaledb:2.29.2-pg17
+    container_name: gridpulse-db
+
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_ADMIN_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN_PASSWORD}
+
+      APP_DB_USER: ${APP_DB_USER}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD}
+
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT}:5432"
+
+    volumes:
+      - gridpulse_pgdata:/var/lib/postgresql/data
+      - ./infra/postgres/init:/docker-entrypoint-initdb.d:ro
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_ADMIN_USER} -d ${POSTGRES_DB}"
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  gridpulse_pgdata:
