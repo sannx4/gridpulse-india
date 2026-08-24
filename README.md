@@ -1,7 +1,12 @@
-# GridPulse India
+# Grid India
 
-Real-time streaming analytics platform for India's electricity grid.
+Real-time Indian power-grid telemetry, analytics and anomaly-detection platform.
 
-## Current Status
+## Repository
 
-Day 1 - Development environment setup.
+- `services/` — backend and ingestion services
+- `apps/` — user-facing applications
+- `packages/` — shared libraries
+- `infra/` — infrastructure and deployment
+- `tests/` — automated tests
+- `docs/` — project documentation
