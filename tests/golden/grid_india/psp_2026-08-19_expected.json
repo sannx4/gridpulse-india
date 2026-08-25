@@ -1,5 +1,6 @@
 [
   {
+    "event_id": "26d477c9cf9f2f28cccced5ec574e43fcf8c69c88e4454cb7df08dcc21834992",
     "source": "grid_india_nldc_psp",
     "entity": "all_india",
     "metric": "grid_frequency",
@@ -11,6 +12,7 @@
     "schema_version": 1
   },
   {
+    "event_id": "986026eeb529f38d92220ed66b3644a9896edd6b6cc8cb637d2f51817534bdd7",
     "source": "grid_india_nldc_psp",
     "entity": "all_india",
     "metric": "demand_met",
@@ -22,6 +24,7 @@
     "schema_version": 1
   },
   {
+    "event_id": "783af5476204eed49ede55ec6a750a95d9bae38a41fbe8edfa2af3435cba26cf",
     "source": "grid_india_nldc_psp",
     "entity": "all_india",
     "metric": "grid_frequency",
@@ -33,6 +36,7 @@
     "schema_version": 1
   },
   {
+    "event_id": "9f786e0b3d1da38bcc23f71f150af40eb3174e3bcc4a1dde9b11eca902f2da88",
     "source": "grid_india_nldc_psp",
     "entity": "all_india",
     "metric": "demand_met",
@@ -44,6 +48,7 @@
     "schema_version": 1
   },
   {
+    "event_id": "ccbf12ffa25732ff8d61592a2ae3ee084906c48638062b63925feb026dc2feb8",
     "source": "grid_india_nldc_psp",
     "entity": "all_india",
     "metric": "grid_frequency",
@@ -55,6 +60,7 @@
     "schema_version": 1
   },
   {
+    "event_id": "bab774a451f5357cb249bae0e6a80d26e9fdf412089595c51c2b47bd733b9dc6",
     "source": "grid_india_nldc_psp",
     "entity": "all_india",
     "metric": "demand_met",
