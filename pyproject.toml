@@ -5,6 +5,9 @@ description = "Real-time Indian power-grid telemetry and intelligence platform"
 requires-python = ">=3.11"
 dependencies = [
     "httpx",
+    "sqlalchemy",
+    "psycopg[binary]",
+    "python-dotenv",
 ]
 
 [tool.ruff]
